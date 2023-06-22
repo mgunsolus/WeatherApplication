@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 4</title>
+    <script src="apis.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ae280f9e8b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <div class="container">
+    <body>
+      <h1>Task Management</h1>
+      <div class="inputContainer">
+        <input type="text" id="task" placeholder="Example: Clean dishes" />
+        <button type="button" id="newTask">Add Task</button>
+      </div>
+      <div class="taskSection">
+        <h4>Tasks</h4>
+        <div id="taskList">
+          <div class="task">
+            <button
+              class="deleteButton"
+              onclick="deleteTask('Task description')"
+            >
+              <i class="fa fa-trash-can"></i>
+            </button>
+            <span class="taskDescription"></span>
+          </div>
+        </div>
+      </div>
+    </body>
+    <footer>
+      <p>Project 4 - NodeJS w/Express</p>
+      <p><i class="fas fa-copyright"></i> mgunsolus 2023</p>
+    </footer>
+  </div>
+</html>
